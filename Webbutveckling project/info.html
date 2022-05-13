@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information</title>
+    <link rel="stylesheet" href="info.css" />
+    <link rel="code" href="info.js" />
+    <link rel="icon" type="" href="favicon (1).ico" />
+  </head>
+
+  <body>
+    <div id="nav" class="sidenav">
+      <a href="index.html" id="home">🕋Home</a>
+      <a href="info.html" id="info">Info</a>
+      <a href="survey.html" id="waffles">Waffles+ 🧇</a>
+    </div>
+    <div class="body1">
+      <div class="header1">
+        <h1>Vart vi står</h1>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="vasjo.jpg" style="width: 100%" />
+          <div class="text">Väsjöbacken</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="rosjon.jpg" style="width: 100%" />
+          <div class="text">Rösjon</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="sollentuna.jpg" style="width: 100%" />
+          <div class="text">Sollentunavallen</div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+
+    <div class="body2">
+      >
+      <div class="header2">
+        <h1>Lorem ipsum</h1>
+      </div>
+
+      <p1
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor
+        nisi voluptatem eius quia nam molestias. Hic excepturi, illo nostrum
+        aliquam ipsum, delectus esse cumque eos sed, accusantium quidem
+        praesentium.</p1
+      >
+      <p2
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
+        laboriosam praesentium. Ad, dolor? Repellendus sapiente consectetur
+        voluptate labore porro voluptatem? Nisi debitis voluptate commodi, porro
+        nobis necessitatibus sit consectetur aut.</p2
+      >
+    </div>
+
+    <div class="body3">
+      <div class="header3">
+        <h1>Lorem ipsum</h1>
+      </div>
+      <p1
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti
+        inventore saepe impedit voluptatum mollitia quisquam voluptate commodi
+        et reprehenderit explicabo repellat doloremque enim eveniet ipsum at
+        deserunt, dolores labore.</p1
+      >
+      <p2
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        voluptas ut vel excepturi nostrum id doloribus! Nulla voluptatem eum
+        quidem, a corrupti mollitia, modi laboriosam perspiciatis facilis
+        dolorum id officia?</p2
+      >
+      <p3
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ducimus
+        eveniet facilis? Architecto illum similique, est odit quod placeat ipsum
+        magni rem nostrum nulla vero maiores. Tempora quisquam nemo optio?</p3
+      >
+      <p4
+        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+        deserunt doloremque optio fuga nisi nostrum perferendis fugiat aut,
+        facilis nulla ut praesentium quasi nobis voluptate eaque, recusandae
+        sapiente pariatur nihil.</p4
+      >
+    </div>
+  </body>
+</html>
